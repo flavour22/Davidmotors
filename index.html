@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davids Motors</title>
+    <link style="border-radius: 50%;" rel="icon" type="image/x-icon" href="../Asset/dav1 (1).jpg">
+    <link rel="stylesheet" href="../Asset/style.css">
+    <link rel="stylesheet" href="../Asset/responsive.css">
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <div class="header">
+            <div class="bizname">
+                <p class="pname" style="color: rgb(235, 55, 10);">David</p>
+                <p class="pname2">Motors</p>
+            </div>
+        </div>
+
+        <div class="home">
+            <p class="welcome" style="padding-top: 20px;">Welcome To David Motors</p>
+            <div class="flex">
+                <div class="description">
+                    <p style="color: white;">David Motors Limited Company is targeted at providing our customers with exotic cars and vehicle that will serve in their best capacity, 
+                        Our products make our consumers stand out in a unique way in the society. 
+                        We also offer maintenance, repair, upgrade and servicing of cars.</p>
+                </div>   
+                <div class="itempics">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 12</div>
+                          <img src="../Asset/aventador.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                          <div class="text">Lamboghini Aventador</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 12</div>
+                          <img src="../Asset/chironn.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                          <div class="text">Bugatti Chiron</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 12</div>
+                          <img src="../Asset/cyber truck.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                          <div class="text">Tesla Cyber Truck</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 12</div>
+                            <img src="../Asset/camaro.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Chevrolet Camaro</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">5 / 12</div>
+                            <img src="../Asset/lexus GX 550.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Lexus GX 550</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">6 / 12</div>
+                            <img src="../Asset/maybach virgil abloh.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Maybach Virgil Abloh</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">7 / 12</div>
+                            <img src="../Asset/pagani1.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Pagani</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">8 / 12</div>
+                            <img src="../Asset/rolls-royce-cullinan-by-spofec.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Rolls Royce Cullinan</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">9 / 12</div>
+                            <img src="../Asset/urus.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Lamborghini Urus</div>
+                          </div>
+                        
+                          <div class="mySlides fade">
+                            <div class="numbertext">10 / 12</div>
+                            <img src="../Asset/veyron.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Bugatti veyron</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">11 / 12</div>
+                            <img src="../Asset/royce spectre.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">Rolls Royce Spectre</div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <div class="numbertext">12 / 12</div>
+                            <img src="../Asset/veyron.jpg" style="width: 550px; height: 300px; border-radius: 30px;">
+                            <div class="text">veyron</div>
+                          </div>
+
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span>
+                        </div>
+                        
+                        <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        
+                        function showSlides() {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {slideIndex = 1}    
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                          setTimeout(showSlides, 4000); // Change image every 2 seconds
+                        }
+                        </script>
+                </div>         
+            </div>
+        </div>
+
+        <div class="service">
+            <p class="motor" style="">MOTOR CATALGUE</p>
+            <div class="flex2">
+             <div class="description2">
+                 <p style="color: rgb(20, 20, 20); text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Below are vast variety of cars we have to offer, with Unique models and class that make you stand out!</p>
+             </div>   
+             <div class="table">
+                <table>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>Item</th>
+                      <th>Model</th>
+                      <th>Price</th>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <td>Mercedes Maybach</td>
+                      <td>Exelero</td>
+                      <td>$6 000 000</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <td>Rolls Royce </td>
+                      <td>Cullinan</td>
+                      <td>$2 000 000</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <td>Lamborgini</td>
+                      <td>Aventador</td>
+                      <td>$850 000</td>
+                    </tr>
+                    <!-- row 5 -->
+                    <tr>
+                      <td>Mercedes Benz</td>
+                      <td>G-Class Brabus</td>
+                      <td>$450 000</td>
+                    </tr>
+                    <!-- row 6 -->
+                    <tr>
+                      <td>Lexus</td>
+                      <td>GX 550</td>
+                      <td>$100 000</td>
+                    </tr>
+                    <!-- row 7 -->
+                    <tr>
+                      <td>Tesla Truck</td>
+                      <td>Cyber Truck 2023</td>
+                      <td>$150 000</td>
+                    </tr>
+                    <tr>
+                        <td>Bugatti</td>
+                        <td>Chiron </td>
+                        <td>$5 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes Maybach </td>
+                        <td>Virgil Abloh</td>
+                        <td>$800 000</td>
+                    </tr>
+                    <tr>
+                        <td>Pagani</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>$5 600 000</td>
+                    </tr>
+                    <tr>
+                        <td>Lamborgini</td>
+                        <td>Urus 2022</td>
+                        <td>$200 000</td>
+                    </tr>
+                    <tr>
+                        <td>Rolls Royce </td>
+                        <td>Spectre</td>
+                        <td>$1 500 000</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet </td>
+                        <td>Camaro</td>
+                        <td>$200 000</td>
+                    </tr>
+                  </table>  
+             </div>         
+            </div>
+         </div>
+
+         <!-- tag for footer -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="copyright">
+                    <p> copyright @<a style = " outline: none !important;" href="../View(html)/webprofile.html"> Davids webdesigns</a></p>
+                 </div>
+            </div>
+        </footer>
+    <!-- </div> -->
+</body>
+</html>
